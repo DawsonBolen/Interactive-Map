@@ -1,0 +1,92 @@
+#layout-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#before-message {
+    text-align: center;
+    padding: 10px;
+}
+
+#data-dashboard {
+    flex: 25%;
+    width: 25%;
+    background-color: #0F1C2E;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#data-dashboard h2 {
+    font-size: 2rem;
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin: 0 0 1rem 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+    color: #E0E0E0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.map-view {
+    flex: 75%;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C2466;
+}
+
+#world-map {
+    width: 100%;
+    pointer-events: all;
+}
+
+#world-map path {
+    cursor: pointer;
+}
+
+#world-map {
+    width: 100%;
+}
+
+#map-container {
+    width: 100%;
+    padding: 10px;
+}
+
+path {
+    fill: green;
+}
+
+path:hover {
+    fill: darkgreen;
+}
+
+@media screen and (max-width: 768px) {
+    #layout-main {
+        flex-direction: column;
+    }
+
+    .map-view {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    #data-dashboard {
+        width: 100%;
+        flex: 100%;
+    }
+}
